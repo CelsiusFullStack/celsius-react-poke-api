@@ -1,0 +1,48 @@
+.red-rectangle {
+  width: 100%;
+  height: 7.6em;
+  background-color: #DD1A1A;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+}
+.black-rectangle {
+  width: 100%;
+  height: 35px;
+  background-color: #0C0C0C;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+.circle-ext {
+  width: 75px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid black;
+}
+.circle-int {
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 49%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-int:hover{
+  cursor: pointer;
+  background-color: #DD1A1A;
+  border: 4px solid yellow;
+  
+ }

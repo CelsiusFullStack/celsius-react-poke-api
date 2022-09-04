@@ -1,0 +1,239 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+/* --- Reset --- */
+:root{
+  --color-primary: #DD1A1A;
+  --color-secondary: #0C0C0C;
+  --color-tertiary: #E5E5E5;
+  --color-quaternary: #212121;
+  --color-plomo:#6A6A6D;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f1f1f1;
+  font-family: 'Pokemon';
+  font-style: normal;
+  font-weight: 400;
+
+}
+h1, h2, h3, h4, p, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Pokemon solid';
+  font-style: normal;
+  font-weight: 400;
+}
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+.data-entry {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  padding-left: 3.2em;
+  padding-top: 0.8em;
+  padding-bottom: 1.0em;
+  position: relative;
+}
+
+.content-select{
+	margin-left: 0.7em;
+  width: 22vw;
+	position: relative;
+  height: 3em;
+  font-family:'pokemon solid';
+  padding-left: 1em;
+}
+ 
+.content-select select{
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+  font-family:'pokemon solid';
+	border:2px solid rgba(0,0,0,0.2);
+  border-radius: 12px;
+   transition: all 0.25s ease;
+}
+ 
+.content-select select:hover{
+	background: #B1E8CD;
+}
+ 
+
+.content-select i{
+	position: relative;
+	margin-left: 2em;
+	top: calc(50% - 1em);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #2AC176;
+	border-bottom:4px solid #2AC176;
+	transform: rotate(-45deg); 
+	transition: all 0.25s ease;
+}
+ 
+.content-select:hover i{
+	margin-top: 2px;
+}
+.search-input {
+  height: 3em;
+  margin-left: 1.3em;
+  margin-right: 0.5em;
+  padding-left: 1em;
+  width: 22vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: lightgray;
+    font-family: 'Pokemon';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.button-search{
+  width: 13em;
+  height: 3em;;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: yellow;
+    width: 8vw;
+    font-weight: bold;
+    margin-right: 0.8em;
+}
+.button-search:hover{
+     background-color: #dd1a1a;
+     color: white;
+     font-weight: bold;
+}
+/*      Paginate Styles         */
+
+.pagination {
+   position: relative;
+    background-color: var(--color-plomo);
+    padding-top: 7.8em;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--color-primary);
+    padding-bottom:7px;
+    position: relative;
+    z-index: 5;
+}
+
+.pagination ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pagination a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-tertiary);
+}
+
+.btn__off {
+  display: none;
+}
+
+button {
+  background-color: var(--color-tertiary);
+  border: none;
+  border-radius: 5px;
+  padding: 0rem 1.2rem 0.5rem 0.9rem;
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+  font-family: 'Pokemon solid';
+  font-size: 1em;
+  margin-bottom: 0.1em;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 736px){
+  .data-entry{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-top:  0.8em;
+    padding-bottom:  0.9em;
+    padding-left: 0em;
+  } 
+  .content-select{
+    margin:1em;
+    padding: auto;
+    width: 85vw;
+    position: relative;
+    height: 3em;
+    font-family: 'Pokemon';
+    font-style:normal;
+    font-weight: bold;
+    
+  }
+  .search-input {
+    height: 3em;
+    width: 65vw;
+    margin-left: 0.6em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: lightgray;
+    font-family: 'Pokemon';
+    font-style:normal;
+    font-weight: bold;
+  }
+  .button-search{
+    width: 18vw;
+    height: 3em;;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: yellow;
+    margin-bottom: 1em;
+  }
+}

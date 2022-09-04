@@ -1,0 +1,32 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 1px 7px #0003;
+  transition: transform 500ms ease;
+ margin: 0;
+  padding:0;
+}
+.space__letter{
+  font-stretch:ultra-condensed
+}
+
+.footer__center{
+ display: flex;
+ position:relative ;
+ align-content: center;
+ align-items: center;
+ justify-content: center;
+ padding:auto;
+ margin: 0.8em;   
+}
+.footer__center p{
+    font-family: 'pokemon solid';
+    font-weight: bold;
+    font-size: 1.5em;
+}
