@@ -5,7 +5,7 @@ import HeaderPoke from './shared/HeaderPoke'
 import StatPokemon from './Pokedex/StatPokemon'
 import Ability from './Pokedex/Ability'
 import './Pokedex/style/pokemonCard.css'
-import './styles/pokeInfo.css'
+import './styles/pokeinfo.css'
 
 
 
